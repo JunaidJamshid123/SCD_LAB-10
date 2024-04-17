@@ -6,7 +6,6 @@ pipeline {
             steps {
 
                 echo 'Checking out code from GitHub repository...'
-                git branch: "master"
                 git 'https://github.com/JunaidJamshid123/SCD_LAB-10.git'
             }
         }
