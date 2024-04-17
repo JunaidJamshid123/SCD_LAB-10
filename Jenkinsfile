@@ -5,6 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Checking out code from GitHub repository...'
+                git branch: "master"
                 git 'https://github.com/JunaidJamshid123/SCD_LAB-10.git'
             }
         }
@@ -12,7 +13,7 @@ pipeline {
         stage('Dependency Installation') {
             steps {
                 echo 'Installing dependencies for the project...'
-                Bat 'start /b npm install'
+                Bat ' start /b npm install'
             }
         }
 
