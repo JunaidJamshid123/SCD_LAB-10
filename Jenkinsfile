@@ -12,7 +12,7 @@ pipeline {
         stage('Dependency Installation') {
             steps {
                 echo 'Installing dependencies for the project...'
-                Bat 'npm install'
+                Bat 'start /b npm install'
             }
         }
 
